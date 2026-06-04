@@ -42,7 +42,7 @@
         }
 
         .nav-container {
-            max-width: 1100px;
+            max-width: 1250px; 
             margin: 0 auto;
             padding: 0 20px;
             display: flex;
@@ -61,22 +61,22 @@
 
         /* 主体布局 */
         .container {
-            max-width: 1100px;
+            max-width: 1250px; 
             margin: 0 auto;
             display: flex;
-            gap: 50px;
+            gap: 60px; 
             padding: 0 20px 50px 20px;
         }
 
         /* 左侧边栏 */
         .sidebar {
-            flex: 0 0 250px;
+            flex: 0 0 240px;
             text-align: center;
         }
 
         .profile-img {
-            width: 200px;
-            height: 200px;
+            width: 170px; 
+            height: 170px; 
             border-radius: 50%;
             object-fit: cover;
             margin: 0 auto 20px auto;
@@ -191,10 +191,22 @@
         .pub-item {
             margin-bottom: 20px;
             font-size: 15px;
+            line-height: 1.7;
         }
         
         .pub-item strong {
             color: #000;
+        }
+
+        /* 论文链接样式 */
+        .pub-item a {
+            color: var(--link-color);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+        }
+        .pub-item a:hover {
+            text-decoration: underline;
         }
 
         /* 响应式 */
@@ -236,7 +248,7 @@
             </div>
             
             <ul class="contact-list">
-                <li><i class="fa-solid fa-location-dot"></i> Shaoguan, China</li>
+                <li><i class="fa-solid fa-location-dot"></i> Guilin, China</li>
                 <li><i class="fa-solid fa-envelope"></i> <a href="mailto:liaofuxing0520@163.com">Email</a></li>
                 <li><i class="fa-brands fa-github"></i> <a href="https://github.com/Liaofuxingg" target="_blank">Github</a></li>
             </ul>
@@ -258,6 +270,7 @@
             <div class="quote-box">
                 <span class="quote-icon">“</span>
                 <ul class="news-list">
+                    <li>2026.05, 🎉🎉 One paper is accepted by IEEE Transactions on Networking (CCF A).</li>
                     <li>2026.04, 🎉🎉 Successfully obtained the qualification for recommending admission to the Master's program at GXNU.</li>
                     <li>2025.06, 🎉🎉 One patent on adaptive system-level fault diagnosis has been accepted.</li>
                     <li>2025.xx, 🎉🎉 One paper is accepted by IEEE Transactions on Reliability (SCI Q2).</li>
@@ -268,13 +281,18 @@
             <ul class="pub-list">
                 <li class="pub-item">
                     [1] <strong>Fuxing Liao</strong>, Jiafei Liu, Chia-Wei Lee, Sun-Yuan Hsieh, Jingli Wu. 
-                    <br><em>A novel adaptive system-level fault self-diagnosis algorithm and its applications.</em> 
+                    <br><a href="https://ieeexplore.ieee.org/document/10959718" target="_blank"><em>A novel adaptive system-level fault self-diagnosis algorithm and its applications.</em></a> 
                     <br>IEEE Transactions on Reliability 3(74)(2025) 4294-4305 (SCI Q2).
                 </li>
                 <li class="pub-item">
                     [2] <strong>Fuxing Liao</strong>, Jiafei Liu, Chia-Wei Lee, Sun-Yuan Hsieh. 
-                    <br><em>Two fault diagnosis strategies for reliable bubble-sort networks.</em> 
-                    <br>IEEE Transactions on Networking (Minor Revision, CCF A).
+                    <br><a href="#" target="_blank"><em>Two fault diagnosis strategies for reliable bubble-sort networks.</em></a> 
+                    <br>IEEE Transactions on Networking, <strong>Accepted</strong> (CCF A).
+                </li>
+                <li class="pub-item">
+                    [3] 刘佳飞, 郭铖, <strong>廖福星</strong>, 吴璟莉, 李高仕. 
+                    <br><a href="#" target="_blank"><em>一种自适应系统级故障自诊断方法.</em></a> (发明专利)
+                    <br>申请号: 2025107581390 (授理日期: 2025-06-09).
                 </li>
             </ul>
 
