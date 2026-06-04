@@ -74,15 +74,19 @@
             text-align: center;
         }
 
+        /* 头像样式 */
         .profile-img {
-            width: 170px; 
-            height: 170px; 
+            width: 165px;
+            height: 215px;
             border-radius: 50%;
             object-fit: cover;
-            /* 修改了这里：将第一个数值 0 改为 40px，增加顶部空间 */
-            margin: 40px auto 20px auto; 
+            padding: 5px; 
+            background-color: var(--bg-color); 
+            border: 1px solid #c8d4e3; 
+            box-sizing: border-box;
+            /* 去掉了上方的 40px 空间，恢复为 0 */
+            margin: 0 auto 20px auto; 
             display: block;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
 
         .sidebar h2 {
@@ -130,7 +134,7 @@
             margin-bottom: 25px;
         }
 
-        /* 卡片框样式 (About Me & News) */
+        /* 卡片框样式 */
         .quote-box {
             background-color: var(--box-bg);
             border: 1px solid var(--box-border);
@@ -272,7 +276,9 @@
                 <span class="quote-icon">“</span>
                 <ul class="news-list">
                     <li>2026.05, 🎉🎉 One paper is accepted by IEEE Transactions on Networking (CCF A).</li>
-                    <li>2025.04, 🎉🎉 One paper is accepted by IEEE Transactions on Reliability (SCI Q2).</li>
+                    <li>2026.04, 🎉🎉 Successfully obtained the qualification for recommending admission to the Master's program at GXNU.</li>
+                    <li>2025.06, 🎉🎉 One patent on adaptive system-level fault diagnosis has been accepted.</li>
+                    <li>2025.xx, 🎉🎉 One paper is accepted by IEEE Transactions on Reliability (SCI Q2).</li>
                 </ul>
             </div>
 
@@ -288,6 +294,11 @@
                     <br><a href="#" target="_blank"><em>Two fault diagnosis strategies for reliable bubble-sort networks.</em></a> 
                     <br>IEEE Transactions on Networking, <strong>Accepted</strong> (CCF A).
                 </li>
+                <li class="pub-item">
+                    [3] 刘佳飞, 郭铖, <strong>廖福星</strong>, 吴璟莉, 李高仕. 
+                    <br><a href="#" target="_blank"><em>一种自适应系统级故障自诊断方法.</em></a> (发明专利)
+                    <br>申请号: 2025107581390 (授理日期: 2025-06-09).
+                </li>
             </ul>
 
             <h2 id="educations" class="section-title"><i class="fa-solid fa-graduation-cap"></i> Educations</h2>
@@ -297,6 +308,14 @@
                 </li>
                 <li class="pub-item">
                     <strong>2022.09 - 2026.06:</strong> B.E. in Software Engineering, <em>Guangxi Normal University</em>.
+                </li>
+            </ul>
+
+            <h2 id="projects" class="section-title"><i class="fa-solid fa-laptop-code"></i> Projects</h2>
+            <ul class="pub-list">
+                <li class="pub-item">
+                    <strong>Research on Fault Self-Diagnosis of Multiprocessor Systems Based on Interconnection Networks</strong> (National-level Project, Project Leader)
+                    <br>Responsible for exploring the topological connotation of h-extra conditional diagnosability, proposing fault self-diagnosis strategies, and designing efficient diagnostic algorithms.
                 </li>
             </ul>
             
